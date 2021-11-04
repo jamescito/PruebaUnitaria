@@ -21,7 +21,7 @@ class ExampleTest extends TestCase
 
     public function test_update()
     {
-        $response = $this->put('/api/clientes/1', ['Nombre' => 'james','apellido' => 'Reyes']);
+        $response = $this->put('/api/clientes/1', ['Nombre' => 'james','apellido' => 'Calderon']);
 
         $response
             ->assertStatus(200)
@@ -32,7 +32,7 @@ class ExampleTest extends TestCase
 
     public function test_delete()
     {
-        $response = $this->delete('/api/clientes/3');
+        $response = $this->delete('/api/clientes/4');
 
         $response
             ->assertStatus(200)
