@@ -37,7 +37,7 @@ class ClienteController extends Controller
      */
     public function store(GuardarCliente $request)
     {
-        Cliente::create($request->all());
+        Cliente::make($request->all());
         return response()->json([
             'res'=>true,
             'mensaje'=>'Cliente guardado exitosamente'
