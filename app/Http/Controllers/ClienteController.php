@@ -75,7 +75,7 @@ class ClienteController extends Controller
      */
     public function update(EditarCliente $request, Cliente $cliente)
     {
-        $cliente->update($request ->all());
+        $cliente->make($request ->all());
         return response()->json([
             'res'=>true,
             'mensaje'=>'Cliente editado exitosamente'
